@@ -1,0 +1,38 @@
+.subject{
+    padding-left: 470px;
+    padding-top: 70px;
+
+    
+}
+
+.subject .mat-icon{
+    font-size: 90px !important;
+    width: 1500px !important;
+    height: 150px !important;
+}
+
+.subject-line{
+    padding-left: 570px;
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border: 30px black;
+  }
+
+  .table-row{
+    margin-top: 20px;
+  }
+
+  .mat-header-cell{
+    font-weight: bold;
+    color: black;
+  }
+
+  .demo-button{
+    background: white;
+    border: none;
+  }

@@ -1,0 +1,129 @@
+<div mat-dialog-content>
+  <!-- <mat-form-field appearance="fill">
+    <mat-label>Favorite Animal</mat-label>
+    <input matInput [(ngModel)]="data.animal">
+  </mat-form-field> -->
+
+  <table class="table">
+	<thead>
+		<th style="padding-left: 10px;">Key</th>
+		<th>Value</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+                HAEMATOCRIT
+			</td>
+			<td>
+                {{data.HAEMATOCRIT}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                HAEMOGLOBINS
+			</td>
+			<td>
+                {{data.HAEMOGLOBINS}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                ERYTHROCYTE
+			</td>
+			<td>
+                {{data.ERYTHROCYTE}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                LEUCOCYTE
+			</td>
+			<td>
+                {{data.LEUCOCYTE}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                THROMBOCYTE
+			</td>
+			<td>
+                {{data.THROMBOCYTE}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                MCH
+			</td>
+			<td>
+                {{data.MCH}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                MCHC
+			</td>
+			<td>
+                {{data.MCHC}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                MCV
+			</td>
+			<td>
+                {{data.MCV}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                AGE
+			</td>
+			<td>
+                {{data.AGE}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                GENDER
+			</td>
+			<td>
+                {{data.SEX | gender}}
+			</td>
+		</tr>
+
+        <tr>
+			<td>
+                SOURCE
+			</td>
+			<td>
+                {{data.SOURCE | source}}
+			</td>
+		</tr>
+
+        <tr>
+			<td class="camel">
+                HEALTH STATUS
+			</td>
+			<td>
+                {{data.HEALTH | health}}
+			</td>
+		</tr>
+
+	</tbody>
+</table>
+
+</div>
+<div mat-dialog-actions style="float : right">
+	<button mat-button (click)="insert()">Insert into DB</button>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <!-- <button mat-button cdkFocusInitial>Ok</button> -->
+</div>

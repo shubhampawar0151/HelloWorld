@@ -1,0 +1,30 @@
+.subject{
+    padding-left: 470px;
+    padding-top: 70px;
+
+    
+}
+
+.subject .mat-icon{
+    font-size: 90px !important;
+    width: 1500px !important;
+    height: 150px !important;
+}
+
+.subject-line{
+    padding-left: 470px;
+}
+
+.container{
+    padding-top: 40px;
+
+}
+
+label.form-label{
+    padding-top: 5px;
+}
+
+
+.btn-class{
+    padding-top: 15px;
+}

@@ -1,0 +1,15 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar-single-row{
+    background-color: navy;
+    color: whitesmoke;
+  }
+
+  .portal-header{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-left: 30px
+  }

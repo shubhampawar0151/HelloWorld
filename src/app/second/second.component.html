@@ -1,0 +1,152 @@
+<!-- <div class="subject">
+    <mat-icon class="icon-width">build</mat-icon>
+</div>
+<div class="subject-line">
+    Work Under Progress !!!
+</div> -->
+
+<div class="container">
+    <legend>Insert Details</legend>
+    <div class="row">
+      <div class="col col-md-12 row" >
+        <form [formGroup]="inputForm" (ngSubmit)="save()">
+            <div class="row col-md-12">
+                <div class="col-md-4">
+                    <label for="HAEMATOCRIT" class="form-label">HAEMATOCRIT</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="HAEMATOCRIT"
+                      formControlName="HAEMATOCRIT"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="HAEMOGLOBINS" class="form-label">HAEMOGLOBINS</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="HAEMOGLOBINS"
+                      formControlName="HAEMOGLOBINS"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="ERYTHROCYTE" class="form-label">ERYTHROCYTE</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="ERYTHROCYTE"
+                      formControlName="ERYTHROCYTE"
+                      (change)="changeValue()"
+                    />
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="LEUCOCYTE" class="form-label">LEUCOCYTE</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="LEUCOCYTE"
+                      formControlName="LEUCOCYTE"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="THROMBOCYTE" class="form-label">THROMBOCYTE</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="THROMBOCYTE"
+                      formControlName="THROMBOCYTE"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="MCH" class="form-label">MCH</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="MCH"
+                      formControlName="MCH"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="MCHC" class="form-label">MCHC</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="MCHC"
+                      formControlName="MCHC"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="MCV" class="form-label">MCV</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="MCV"
+                      formControlName="MCV"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="AGE" class="form-label">AGE</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="AGE"
+                      formControlName="AGE"
+                      (change)="changeValue()"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="SEX" class="form-label row" style="padding-left: 10px;">GENDER</label>
+                    <select class="custom-select col-md-9" style="height: 55%;" (change)="selectGender($event)" formControlName="SEX">
+                        <!-- <option value="">Choose your gender</option> -->
+                        <option  [ngValue]=0>Male</option>
+                        <option  [ngValue]=1>Female</option>
+                        <!-- <option *ngFor="let city of gender">{{city}}</option> -->
+                      </select>
+
+                      <!-- <label for="SEX" class="form-label">gender</label>
+                      <mat-form-field appearance="fill" formControlName="SEX">
+                        <mat-label>gender</mat-label>
+                        <mat-select [(value)]="selected">
+                          <mat-option>None</mat-option>
+                          <mat-option value="option1">Male</mat-option>
+                          <mat-option value="option2">Female</mat-option>
+                          <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                      </mat-form-field> -->
+
+                  </div>
+                  <div class="col-md-6">
+                    <label for="SOURCE" class="form-label row" style="padding-left: 10px;" >SOURCE</label>
+                    <select class="custom-select col-md-9" style="height: 55%;" (change)="selectGender($event)" formControlName="SOURCE">
+                      <option  [ngValue]=1>In</option>
+                      <option  [ngValue]=0>Out</option>
+                    </select>
+                    
+                    <!-- <input
+                      type="number"
+                      class="form-control"
+                      id="SOURCE"
+                      formControlName="SOURCE"
+                    /> -->
+                  </div>
+
+            </div>
+          <div class="btn-class">
+            <button type="submit" [disabled]="disabled" class="btn btn-primary">Submit</button>
+          </div>
+          
+        </form>
+      </div>
+      <div class="col col-md-4">
+        <!-- <div style="position: fixed">{{ preview }}</div> -->
+      </div>
+    </div>
+  </div>
